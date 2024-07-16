@@ -1,0 +1,11 @@
+{% extends "admin/challenges/create.html" %}
+
+{% block header %}
+<div class="alert alert-secondary" role="alert">
+	One answer challenge allows users to customize a new type of challenge, which only allows submitting a correct flag. Once there is a solve, it will no longer be allowed to be submitted.
+</div>
+{% endblock %}
+
+{% block type %}
+<input type="hidden" value="one_answer_challenge" name="type" id="chaltype">
+{% endblock %}
